@@ -8,6 +8,7 @@ const app = express();
 // middleware giúp phân giải dữ liệu từ json sang đối tượng javascript
 app.use(express.json());
 
+// di chuyển tới các router đã cấu hình
 app.use(rootRouter);
 
 app.listen(3069, () => {
